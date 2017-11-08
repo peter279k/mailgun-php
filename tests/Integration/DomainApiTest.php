@@ -112,7 +112,7 @@ class DomainApiTest extends TestCase
         $mg = $this->getMailgunClient();
 
         $domain = $mg->domains()->create(
-            self::$domainName,     // domain name
+            self::$domainName,          // domain name
             'exampleOrgSmtpPassword12', // smtp password
             'tag',                      // default spam action
             false                       // wildcard domain?
